@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		91484A272BBB5DAA00D10F60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A262BBB5DAA00D10F60 /* AppDelegate.swift */; };
 		91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */; };
-		91484A2B2BBB5DAA00D10F60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A2A2BBB5DAA00D10F60 /* ViewController.swift */; };
+		91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */; };
 		91484A2E2BBB5DAA00D10F60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91484A2D2BBB5DAA00D10F60 /* Base */; };
 		91484A302BBB5DAC00D10F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */; };
 		91484A332BBB5DAC00D10F60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91484A322BBB5DAC00D10F60 /* Base */; };
+		91484A3D2BBB761300D10F60 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A3C2BBB761300D10F60 /* HomeScreenView.swift */; };
+		91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A402BBB7E2500D10F60 /* RedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91484A232BBB5DAA00D10F60 /* Agenda Jet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda Jet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91484A262BBB5DAA00D10F60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91484A2A2BBB5DAA00D10F60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91484A2D2BBB5DAA00D10F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91484A322BBB5DAC00D10F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91484A342BBB5DAC00D10F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91484A3C2BBB761300D10F60 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		91484A402BBB7E2500D10F60 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		91484A252BBB5DAA00D10F60 /* Agenda Jet */ = {
 			isa = PBXGroup;
 			children = (
+				91484A3F2BBB7DEB00D10F60 /* Components */,
 				91484A262BBB5DAA00D10F60 /* AppDelegate.swift */,
 				91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */,
-				91484A2A2BBB5DAA00D10F60 /* ViewController.swift */,
+				91484A3A2BBB75A500D10F60 /* View */,
 				91484A2C2BBB5DAA00D10F60 /* Main.storyboard */,
 				91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */,
 				91484A312BBB5DAC00D10F60 /* LaunchScreen.storyboard */,
 				91484A342BBB5DAC00D10F60 /* Info.plist */,
 			);
 			path = "Agenda Jet";
+			sourceTree = "<group>";
+		};
+		91484A3A2BBB75A500D10F60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91484A3B2BBB75D800D10F60 /* Screen */,
+				91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91484A3B2BBB75D800D10F60 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				91484A3C2BBB761300D10F60 /* HomeScreenView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		91484A3F2BBB7DEB00D10F60 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				91484A402BBB7E2500D10F60 /* RedButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91484A2B2BBB5DAA00D10F60 /* ViewController.swift in Sources */,
+				91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */,
 				91484A272BBB5DAA00D10F60 /* AppDelegate.swift in Sources */,
 				91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */,
+				91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */,
+				91484A3D2BBB761300D10F60 /* HomeScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +329,6 @@
 				INFOPLIST_FILE = "Agenda Jet/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -331,7 +362,6 @@
 				INFOPLIST_FILE = "Agenda Jet/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
