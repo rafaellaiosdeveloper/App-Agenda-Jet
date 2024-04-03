@@ -7,15 +7,19 @@
 
 import UIKit
 
+protocol HomeScreenViewDelegate: AnyObject {
+    func didTapLoginButton1()
+    func didTapLoginButton2()
+}
+
+
 class HomeScreenView: UIView {
+    weak var delegate: HomeScreenViewDelegate?
     
-    lazy var logojetImage: UIImageView = {
-        let image = UIImageView()
+    lazy var logojetImage: LogoJetImage = {
+        let image = LogoJetImage(frame: .zero)
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "JET")
-        image.contentMode = .scaleAspectFill
-        image.layer.cornerRadius = 45.0
-        image.clipsToBounds = true
+        image.setupImage()
         return image
     }()
     
@@ -53,8 +57,10 @@ class HomeScreenView: UIView {
     @objc func tappedButton(sender:UIButton){
         switch sender.tag {
         case 1:
+            delegate?.didTapLoginButton1()
             print("login")
         case 2:
+            delegate?.didTapLoginButton2()
             print("Cadastro")
         case 3:
             print("Conhecer serviços")
@@ -62,7 +68,7 @@ class HomeScreenView: UIView {
             print("action disparada")
         }
     }
-    
+   
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -76,7 +82,7 @@ class HomeScreenView: UIView {
     
     private func configConstraints(){
         NSLayoutConstraint.activate([
-            self.logojetImage.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 120),
+            self.logojetImage.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 110),
             self.logojetImage.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 93),
             self.logojetImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -93),
             self.logojetImage.heightAnchor.constraint(equalTo: logojetImage.widthAnchor),

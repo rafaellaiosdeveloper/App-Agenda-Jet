@@ -11,10 +11,16 @@
 		91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */; };
 		91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */; };
 		91484A2E2BBB5DAA00D10F60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91484A2D2BBB5DAA00D10F60 /* Base */; };
-		91484A302BBB5DAC00D10F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */; };
 		91484A332BBB5DAC00D10F60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 91484A322BBB5DAC00D10F60 /* Base */; };
 		91484A3D2BBB761300D10F60 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A3C2BBB761300D10F60 /* HomeScreenView.swift */; };
 		91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A402BBB7E2500D10F60 /* RedButton.swift */; };
+		915A3E5B2BBCAC2700B5BCFB /* LogoJetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */; };
+		915A3E5F2BBCB14C00B5BCFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */; };
+		915A3E612BBCBD3400B5BCFB /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */; };
+		915A3E632BBCC78D00B5BCFB /* TextfieldWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */; };
+		915A3E652BBCCD9A00B5BCFB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */; };
+		915A3E672BBCCDFE00B5BCFB /* RegisterViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */; };
+		915A3E692BBCD04700B5BCFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915A3E682BBCD04700B5BCFB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +29,17 @@
 		91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91484A2D2BBB5DAA00D10F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91484A322BBB5DAC00D10F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91484A342BBB5DAC00D10F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91484A3C2BBB761300D10F60 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		91484A402BBB7E2500D10F60 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
+		915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoJetImage.swift; sourceTree = "<group>"; };
+		915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
+		915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldWithImage.swift; sourceTree = "<group>"; };
+		915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewScreen.swift; sourceTree = "<group>"; };
+		915A3E682BBCD04700B5BCFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Library/Mobile Documents/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +77,9 @@
 				91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */,
 				91484A3A2BBB75A500D10F60 /* View */,
 				91484A2C2BBB5DAA00D10F60 /* Main.storyboard */,
-				91484A2F2BBB5DAC00D10F60 /* Assets.xcassets */,
-				91484A312BBB5DAC00D10F60 /* LaunchScreen.storyboard */,
 				91484A342BBB5DAC00D10F60 /* Info.plist */,
+				91484A312BBB5DAC00D10F60 /* LaunchScreen.storyboard */,
+				915A3E682BBCD04700B5BCFB /* Assets.xcassets */,
 			);
 			path = "Agenda Jet";
 			sourceTree = "<group>";
@@ -77,6 +89,8 @@
 			children = (
 				91484A3B2BBB75D800D10F60 /* Screen */,
 				91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */,
+				915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */,
+				915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				91484A3C2BBB761300D10F60 /* HomeScreenView.swift */,
+				915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */,
+				915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -93,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				91484A402BBB7E2500D10F60 /* RedButton.swift */,
+				915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */,
+				915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -155,8 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91484A302BBB5DAC00D10F60 /* Assets.xcassets in Resources */,
 				91484A332BBB5DAC00D10F60 /* Base in Resources */,
+				915A3E692BBCD04700B5BCFB /* Assets.xcassets in Resources */,
 				91484A2E2BBB5DAA00D10F60 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,10 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915A3E5F2BBCB14C00B5BCFB /* LoginViewController.swift in Sources */,
+				915A3E652BBCCD9A00B5BCFB /* RegisterViewController.swift in Sources */,
+				915A3E5B2BBCAC2700B5BCFB /* LogoJetImage.swift in Sources */,
 				91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */,
 				91484A272BBB5DAA00D10F60 /* AppDelegate.swift in Sources */,
+				915A3E612BBCBD3400B5BCFB /* LoginViewScreen.swift in Sources */,
 				91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */,
+				915A3E672BBCCDFE00B5BCFB /* RegisterViewScreen.swift in Sources */,
 				91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */,
+				915A3E632BBCC78D00B5BCFB /* TextfieldWithImage.swift in Sources */,
 				91484A3D2BBB761300D10F60 /* HomeScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

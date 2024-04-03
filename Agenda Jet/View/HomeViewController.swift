@@ -20,11 +20,23 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        screen?.delegate = self
     }
-
-   
-
 
 }
 
+extension HomeViewController: HomeScreenViewDelegate{
+    func didTapLoginButton1() {
+        let loginViewController = LoginViewController()
+        navigationController?.pushViewController(loginViewController, animated: true)
+    }
+    
+    func didTapLoginButton2() {
+        let registerViewController = RegisterViewController()
+        navigationController?.pushViewController(registerViewController, animated: true)
+    }
+    
+    
+    
+    
+}
