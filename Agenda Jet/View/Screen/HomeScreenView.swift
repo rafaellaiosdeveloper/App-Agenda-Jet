@@ -10,8 +10,8 @@ import UIKit
 protocol HomeScreenViewDelegate: AnyObject {
     func didTapLoginButton1()
     func didTapLoginButton2()
+    func didTapLoginButton3()
 }
-
 
 class HomeScreenView: UIView {
     weak var delegate: HomeScreenViewDelegate?
@@ -53,7 +53,6 @@ class HomeScreenView: UIView {
         return button
     }()
     
-    
     @objc func tappedButton(sender:UIButton){
         switch sender.tag {
         case 1:
@@ -63,15 +62,16 @@ class HomeScreenView: UIView {
             delegate?.didTapLoginButton2()
             print("Cadastro")
         case 3:
+            delegate?.didTapLoginButton3()
             print("Conhecer serviços")
         default:
             print("action disparada")
         }
     }
-   
-    
+  
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         addsubviews()
         self.configConstraints()
     }

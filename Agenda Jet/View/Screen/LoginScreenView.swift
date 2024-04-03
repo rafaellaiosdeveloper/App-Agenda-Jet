@@ -7,7 +7,9 @@
 
 import UIKit
 
-class LoginViewScreen: UIView{
+class LoginScreenView: UIView{
+    
+    
     
     lazy var logojetImage: LogoJetImage = {
         let image = LogoJetImage(frame: .zero)
@@ -19,7 +21,7 @@ class LoginViewScreen: UIView{
     lazy var emailTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "email")!, placeholder: "                        E-MAIL")
+        textField.setupTextfield(image: UIImage(named: "email")!, placeholder: " E-MAIL")
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
         return textField
@@ -28,7 +30,7 @@ class LoginViewScreen: UIView{
     lazy var passwordTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: "                      SENHA")
+        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: " SENHA")
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -85,4 +87,9 @@ class LoginViewScreen: UIView{
                 self.addSubview(self.passwordTextField)
                 self.addSubview(self.logginButton)
             }
+    
+    
 }
+
+
+

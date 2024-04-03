@@ -16,11 +16,16 @@
 		91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91484A402BBB7E2500D10F60 /* RedButton.swift */; };
 		915A3E5B2BBCAC2700B5BCFB /* LogoJetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */; };
 		915A3E5F2BBCB14C00B5BCFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */; };
-		915A3E612BBCBD3400B5BCFB /* LoginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */; };
+		915A3E612BBCBD3400B5BCFB /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E602BBCBD3400B5BCFB /* LoginScreenView.swift */; };
 		915A3E632BBCC78D00B5BCFB /* TextfieldWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */; };
 		915A3E652BBCCD9A00B5BCFB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */; };
-		915A3E672BBCCDFE00B5BCFB /* RegisterViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */; };
+		915A3E672BBCCDFE00B5BCFB /* RegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E662BBCCDFE00B5BCFB /* RegisterScreenView.swift */; };
 		915A3E692BBCD04700B5BCFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915A3E682BBCD04700B5BCFB /* Assets.xcassets */; };
+		915A3E6D2BBCE8A300B5BCFB /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E6C2BBCE8A300B5BCFB /* CustomBackButton.swift */; };
+		915A3E6F2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E6E2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift */; };
+		915A3E712BBCF18000B5BCFB /* DiscoverServicesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */; };
+		915A3E732BBCF9BC00B5BCFB /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */; };
+		915A3E762BBCFFCD00B5BCFB /* ServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E752BBCFFCD00B5BCFB /* ServicesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +40,16 @@
 		91484A402BBB7E2500D10F60 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
 		915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoJetImage.swift; sourceTree = "<group>"; };
 		915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewScreen.swift; sourceTree = "<group>"; };
+		915A3E602BBCBD3400B5BCFB /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldWithImage.swift; sourceTree = "<group>"; };
 		915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewScreen.swift; sourceTree = "<group>"; };
+		915A3E662BBCCDFE00B5BCFB /* RegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenView.swift; sourceTree = "<group>"; };
 		915A3E682BBCD04700B5BCFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Library/Mobile Documents/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
+		915A3E6C2BBCE8A300B5BCFB /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		915A3E6E2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverServicesViewController.swift; sourceTree = "<group>"; };
+		915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverServicesScreenView.swift; sourceTree = "<group>"; };
+		915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		915A3E752BBCFFCD00B5BCFB /* ServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 				91484A3F2BBB7DEB00D10F60 /* Components */,
 				91484A262BBB5DAA00D10F60 /* AppDelegate.swift */,
 				91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */,
+				915A3E742BBCFF8100B5BCFB /* Model */,
 				91484A3A2BBB75A500D10F60 /* View */,
 				91484A2C2BBB5DAA00D10F60 /* Main.storyboard */,
 				91484A342BBB5DAC00D10F60 /* Info.plist */,
@@ -91,6 +102,7 @@
 				91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */,
 				915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */,
 				915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */,
+				915A3E6E2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,8 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				91484A3C2BBB761300D10F60 /* HomeScreenView.swift */,
-				915A3E602BBCBD3400B5BCFB /* LoginViewScreen.swift */,
-				915A3E662BBCCDFE00B5BCFB /* RegisterViewScreen.swift */,
+				915A3E602BBCBD3400B5BCFB /* LoginScreenView.swift */,
+				915A3E662BBCCDFE00B5BCFB /* RegisterScreenView.swift */,
+				915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -108,11 +121,29 @@
 		91484A3F2BBB7DEB00D10F60 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				915A3E772BBD08BA00B5BCFB /* Cell */,
 				91484A402BBB7E2500D10F60 /* RedButton.swift */,
 				915A3E5A2BBCAC2700B5BCFB /* LogoJetImage.swift */,
 				915A3E622BBCC78D00B5BCFB /* TextfieldWithImage.swift */,
+				915A3E6C2BBCE8A300B5BCFB /* CustomBackButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		915A3E742BBCFF8100B5BCFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				915A3E752BBCFFCD00B5BCFB /* ServicesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		915A3E772BBD08BA00B5BCFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +220,17 @@
 				915A3E5F2BBCB14C00B5BCFB /* LoginViewController.swift in Sources */,
 				915A3E652BBCCD9A00B5BCFB /* RegisterViewController.swift in Sources */,
 				915A3E5B2BBCAC2700B5BCFB /* LogoJetImage.swift in Sources */,
+				915A3E762BBCFFCD00B5BCFB /* ServicesModel.swift in Sources */,
 				91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */,
+				915A3E712BBCF18000B5BCFB /* DiscoverServicesScreenView.swift in Sources */,
 				91484A272BBB5DAA00D10F60 /* AppDelegate.swift in Sources */,
-				915A3E612BBCBD3400B5BCFB /* LoginViewScreen.swift in Sources */,
+				915A3E732BBCF9BC00B5BCFB /* ServicesTableViewCell.swift in Sources */,
+				915A3E612BBCBD3400B5BCFB /* LoginScreenView.swift in Sources */,
 				91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */,
-				915A3E672BBCCDFE00B5BCFB /* RegisterViewScreen.swift in Sources */,
+				915A3E6F2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift in Sources */,
+				915A3E672BBCCDFE00B5BCFB /* RegisterScreenView.swift in Sources */,
 				91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */,
+				915A3E6D2BBCE8A300B5BCFB /* CustomBackButton.swift in Sources */,
 				915A3E632BBCC78D00B5BCFB /* TextfieldWithImage.swift in Sources */,
 				91484A3D2BBB761300D10F60 /* HomeScreenView.swift in Sources */,
 			);
@@ -356,7 +392,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,7 +425,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

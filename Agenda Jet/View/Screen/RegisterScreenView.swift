@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewScreen: UIView{
+class RegisterScreenView: UIView{
     
     lazy var logojetImage: LogoJetImage = {
         let image = LogoJetImage(frame: .zero)
@@ -27,14 +27,14 @@ class RegisterViewScreen: UIView{
     lazy var nameTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "name")!, placeholder: "                        NOME")
+        textField.setupTextfield(image: UIImage(named: "name")!, placeholder: " NOME")
         return textField
     }()
     
     lazy var emailTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "email")!, placeholder: "                        E-MAIL")
+        textField.setupTextfield(image: UIImage(named: "email")!, placeholder: " E-MAIL")
         textField.autocapitalizationType = .none
         textField.keyboardType = .emailAddress
         return textField
@@ -43,7 +43,7 @@ class RegisterViewScreen: UIView{
     lazy var phoneTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "phone")!, placeholder: "                    TELEFONE")
+        textField.setupTextfield(image: UIImage(named: "phone")!, placeholder: " TELEFONE")
         textField.keyboardType = .numberPad
         return textField
     }()
@@ -51,7 +51,7 @@ class RegisterViewScreen: UIView{
     lazy var passwordTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: "                       SENHA")
+        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: " SENHA")
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -59,7 +59,7 @@ class RegisterViewScreen: UIView{
     lazy var confirmPasswordTextField: TextfieldWithImage = {
         let textField = TextfieldWithImage()
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: "            CONFIRME SUA SENHA")
+        textField.setupTextfield(image: UIImage(named: "senha")!, placeholder: " CONFIRME SUA SENHA")
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -141,4 +141,8 @@ class RegisterViewScreen: UIView{
                 self.addSubview(self.confirmPasswordTextField)
                 self.addSubview(self.registerButton)
             }
+}
+
+#Preview(""){
+    RegisterScreenView()
 }
