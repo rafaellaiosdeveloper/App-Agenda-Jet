@@ -7,9 +7,12 @@
 
 import UIKit
 
+protocol LoginScreenViewDelegate: AnyObject {
+    func didTapLoginButton()
+}
+
 class LoginScreenView: UIView{
-    
-    
+    weak var delegate: LoginScreenViewDelegate?
     
     lazy var logojetImage: LogoJetImage = {
         let image = LogoJetImage(frame: .zero)
@@ -44,6 +47,7 @@ class LoginScreenView: UIView{
     }()
     
     @objc func tappedButton(sender:UIButton){
+        delegate?.didTapLoginButton()
         print("action disparada")
     }
     

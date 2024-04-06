@@ -26,6 +26,12 @@
 		915A3E712BBCF18000B5BCFB /* DiscoverServicesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */; };
 		915A3E732BBCF9BC00B5BCFB /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */; };
 		915A3E762BBCFFCD00B5BCFB /* ServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A3E752BBCFFCD00B5BCFB /* ServicesModel.swift */; };
+		91B7A06D2BBDF2F400973E90 /* ServicesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A06C2BBDF2F400973E90 /* ServicesScreenView.swift */; };
+		91B7A0702BBE028A00973E90 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A06F2BBE028A00973E90 /* TabBarController.swift */; };
+		91B7A0722BBE03E500973E90 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A0712BBE03E500973E90 /* ServicesViewController.swift */; };
+		91B7A0742BBE042F00973E90 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A0732BBE042F00973E90 /* CartViewController.swift */; };
+		91B7A0762BBE045300973E90 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A0752BBE045300973E90 /* ScheduleViewController.swift */; };
+		91B7A0782BBE046800973E90 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B7A0772BBE046800973E90 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverServicesScreenView.swift; sourceTree = "<group>"; };
 		915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		915A3E752BBCFFCD00B5BCFB /* ServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModel.swift; sourceTree = "<group>"; };
+		91B7A06C2BBDF2F400973E90 /* ServicesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesScreenView.swift; sourceTree = "<group>"; };
+		91B7A06F2BBE028A00973E90 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		91B7A0712BBE03E500973E90 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		91B7A0732BBE042F00973E90 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		91B7A0752BBE045300973E90 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		91B7A0772BBE046800973E90 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +94,9 @@
 		91484A252BBB5DAA00D10F60 /* Agenda Jet */ = {
 			isa = PBXGroup;
 			children = (
-				91484A3F2BBB7DEB00D10F60 /* Components */,
 				91484A262BBB5DAA00D10F60 /* AppDelegate.swift */,
 				91484A282BBB5DAA00D10F60 /* SceneDelegate.swift */,
+				91484A3F2BBB7DEB00D10F60 /* Components */,
 				915A3E742BBCFF8100B5BCFB /* Model */,
 				91484A3A2BBB75A500D10F60 /* View */,
 				91484A2C2BBB5DAA00D10F60 /* Main.storyboard */,
@@ -98,24 +110,13 @@
 		91484A3A2BBB75A500D10F60 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91484A3B2BBB75D800D10F60 /* Screen */,
-				91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */,
-				915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */,
-				915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */,
-				915A3E6E2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift */,
+				91B7A0652BBDF21600973E90 /* HomeView */,
+				91B7A0662BBDF23900973E90 /* LoginView */,
+				91B7A0672BBDF25000973E90 /* RegisterView */,
+				91B7A0682BBDF26D00973E90 /* DiscoverServicesView */,
+				91B7A06E2BBE024100973E90 /* TabBarView */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		91484A3B2BBB75D800D10F60 /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-				91484A3C2BBB761300D10F60 /* HomeScreenView.swift */,
-				915A3E602BBCBD3400B5BCFB /* LoginScreenView.swift */,
-				915A3E662BBCCDFE00B5BCFB /* RegisterScreenView.swift */,
-				915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */,
-			);
-			path = Screen;
 			sourceTree = "<group>";
 		};
 		91484A3F2BBB7DEB00D10F60 /* Components */ = {
@@ -144,6 +145,87 @@
 				915A3E722BBCF9BC00B5BCFB /* ServicesTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		91B7A0652BBDF21600973E90 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				91484A2A2BBB5DAA00D10F60 /* HomeViewController.swift */,
+				91484A3C2BBB761300D10F60 /* HomeScreenView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		91B7A0662BBDF23900973E90 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				915A3E5E2BBCB14C00B5BCFB /* LoginViewController.swift */,
+				915A3E602BBCBD3400B5BCFB /* LoginScreenView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		91B7A0672BBDF25000973E90 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				915A3E642BBCCD9A00B5BCFB /* RegisterViewController.swift */,
+				915A3E662BBCCDFE00B5BCFB /* RegisterScreenView.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		91B7A0682BBDF26D00973E90 /* DiscoverServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				915A3E6E2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift */,
+				915A3E702BBCF18000B5BCFB /* DiscoverServicesScreenView.swift */,
+			);
+			path = DiscoverServicesView;
+			sourceTree = "<group>";
+		};
+		91B7A06E2BBE024100973E90 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				91B7A06F2BBE028A00973E90 /* TabBarController.swift */,
+				91B7A0792BBE071800973E90 /* ServicesView */,
+				91B7A07A2BBE074E00973E90 /* CartView */,
+				91B7A07B2BBE076B00973E90 /* ScheduleView */,
+				91B7A07C2BBE077D00973E90 /* ProfileView */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		91B7A0792BBE071800973E90 /* ServicesView */ = {
+			isa = PBXGroup;
+			children = (
+				91B7A0712BBE03E500973E90 /* ServicesViewController.swift */,
+				91B7A06C2BBDF2F400973E90 /* ServicesScreenView.swift */,
+			);
+			path = ServicesView;
+			sourceTree = "<group>";
+		};
+		91B7A07A2BBE074E00973E90 /* CartView */ = {
+			isa = PBXGroup;
+			children = (
+				91B7A0732BBE042F00973E90 /* CartViewController.swift */,
+			);
+			path = CartView;
+			sourceTree = "<group>";
+		};
+		91B7A07B2BBE076B00973E90 /* ScheduleView */ = {
+			isa = PBXGroup;
+			children = (
+				91B7A0752BBE045300973E90 /* ScheduleViewController.swift */,
+			);
+			path = ScheduleView;
+			sourceTree = "<group>";
+		};
+		91B7A07C2BBE077D00973E90 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				91B7A0772BBE046800973E90 /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,13 +303,19 @@
 				915A3E652BBCCD9A00B5BCFB /* RegisterViewController.swift in Sources */,
 				915A3E5B2BBCAC2700B5BCFB /* LogoJetImage.swift in Sources */,
 				915A3E762BBCFFCD00B5BCFB /* ServicesModel.swift in Sources */,
+				91B7A06D2BBDF2F400973E90 /* ServicesScreenView.swift in Sources */,
 				91484A2B2BBB5DAA00D10F60 /* HomeViewController.swift in Sources */,
 				915A3E712BBCF18000B5BCFB /* DiscoverServicesScreenView.swift in Sources */,
+				91B7A0742BBE042F00973E90 /* CartViewController.swift in Sources */,
 				91484A272BBB5DAA00D10F60 /* AppDelegate.swift in Sources */,
+				91B7A0722BBE03E500973E90 /* ServicesViewController.swift in Sources */,
 				915A3E732BBCF9BC00B5BCFB /* ServicesTableViewCell.swift in Sources */,
+				91B7A0702BBE028A00973E90 /* TabBarController.swift in Sources */,
+				91B7A0762BBE045300973E90 /* ScheduleViewController.swift in Sources */,
 				915A3E612BBCBD3400B5BCFB /* LoginScreenView.swift in Sources */,
 				91484A292BBB5DAA00D10F60 /* SceneDelegate.swift in Sources */,
 				915A3E6F2BBCF08D00B5BCFB /* DiscoverServicesViewController.swift in Sources */,
+				91B7A0782BBE046800973E90 /* ProfileViewController.swift in Sources */,
 				915A3E672BBCCDFE00B5BCFB /* RegisterScreenView.swift in Sources */,
 				91484A412BBB7E2500D10F60 /* RedButton.swift in Sources */,
 				915A3E6D2BBCE8A300B5BCFB /* CustomBackButton.swift in Sources */,

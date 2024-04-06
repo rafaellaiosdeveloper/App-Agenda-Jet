@@ -23,6 +23,4 @@ class DiscoverServicesViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         view.backgroundColor = .white
     }
-    
-
 }

@@ -30,7 +30,6 @@ class ServicesTableViewCell: UITableViewCell {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Ver Detalhes...", for: .normal)
-        button.isEnabled = true
         button.setTitleColor(.redDefault, for: .normal)
         button.addTarget(self, action: #selector(self.tappedButton(sender:)), for: .touchUpInside)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
@@ -65,7 +64,7 @@ class ServicesTableViewCell: UITableViewCell {
                         detailsButton.centerYAnchor.constraint(equalTo: centerYAnchor),
                         detailsButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
                         detailsButton.widthAnchor.constraint(equalToConstant: 100),
-                        detailsButton.heightAnchor.constraint(equalToConstant: 3)
+                        detailsButton.heightAnchor.constraint(equalToConstant: 10)
            
         ])
         

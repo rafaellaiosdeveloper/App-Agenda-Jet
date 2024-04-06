@@ -1,13 +1,13 @@
 //
-//  DiscoverServicesScreenView.swift
+//  ServicesScreenView.swift
 //  Agenda Jet
 //
-//  Created by Rafaella Rodrigues Santos on 02/04/24.
+//  Created by Rafaella Rodrigues Santos on 03/04/24.
 //
 
 import UIKit
 
-class DiscoverServicesScreenView: UIView {
+class ServicesScreenView: UIView{
     
     let data = ServicesModel()
     
@@ -22,7 +22,6 @@ class DiscoverServicesScreenView: UIView {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.isScrollEnabled = true
-        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(ServicesTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -42,16 +41,18 @@ class DiscoverServicesScreenView: UIView {
     private func configConstraints(){
         NSLayoutConstraint.activate([
             
-            self.searchBarServices.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 24),
+            self.searchBarServices.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 10),
             self.searchBarServices.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 20),
             self.searchBarServices.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             self.searchBarServices.heightAnchor.constraint(equalTo: searchBarServices.widthAnchor, multiplier: 0.11),
             
             
-            tableView.topAnchor.constraint(equalTo: topAnchor),
-                        tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                        tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                        tableView.bottomAnchor.constraint(equalTo:bottomAnchor),
+            self.tableView.topAnchor.constraint(equalTo: searchBarServices.bottomAnchor, constant: 8),
+            self.tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            self.tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            self.tableView.bottomAnchor.constraint(equalTo:bottomAnchor),
+            
+
            
         ])
             }
@@ -59,14 +60,11 @@ class DiscoverServicesScreenView: UIView {
             func addsubviews() {
                 self.addSubview(self.searchBarServices)
                 self.addSubview(self.tableView)
-                
             }
 }
 
-extension DiscoverServicesScreenView: UITableViewDelegate, UITableViewDataSource{
-    
-    
-    
+extension ServicesScreenView: UITableViewDelegate, UITableViewDataSource{
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.list.count
     }
@@ -80,11 +78,6 @@ extension DiscoverServicesScreenView: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 80 
+            return 80
         }
-    
-}
-
-#Preview(""){
-    DiscoverServicesScreenView()
 }

@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     override func loadView() {
         self.screen = LoginScreenView()
         self.view = screen
+        screen?.delegate = self
     }
 
     override func viewDidLoad() {
@@ -23,4 +24,13 @@ class LoginViewController: UIViewController {
         navigationItem.leftBarButtonItem = backButton
         self.view.backgroundColor = .white
     }
+}
+
+extension LoginViewController: LoginScreenViewDelegate {
+    func didTapLoginButton() {
+        let tabBarController = TabBarController()
+        navigationController?.pushViewController(tabBarController, animated: true)
+    }
+    
+    
 }
