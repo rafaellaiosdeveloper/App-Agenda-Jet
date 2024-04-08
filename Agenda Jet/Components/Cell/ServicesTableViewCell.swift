@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol DetailsButtonDelegate: AnyObject {
+    func didTapDetailsButton()
+}
+
 class ServicesTableViewCell: UITableViewCell {
+    weak var delegate: DetailsButtonDelegate?
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -37,6 +42,7 @@ class ServicesTableViewCell: UITableViewCell {
     }()
     
     @objc func tappedButton(sender:UIButton){
+        delegate?.didTapDetailsButton()
         print("action disparada")
     }
     

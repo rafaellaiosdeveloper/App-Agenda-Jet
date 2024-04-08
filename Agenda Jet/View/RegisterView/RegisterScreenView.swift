@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol RegisterScreenViewDelegate: AnyObject {
+    func didTapRegisterButton()
+}
+
 class RegisterScreenView: UIView{
+    weak var delegate: RegisterScreenViewDelegate?
     
     lazy var logojetImage: LogoJetImage = {
         let image = LogoJetImage(frame: .zero)
@@ -73,6 +78,7 @@ class RegisterScreenView: UIView{
     }()
     
     @objc func tappedButton(sender:UIButton){
+        delegate?.didTapRegisterButton()
         print("action disparada")
     }
     

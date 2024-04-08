@@ -23,7 +23,7 @@ class TabBarController: UITabBarController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
 
     private func setupTabBarController() {
@@ -35,8 +35,6 @@ class TabBarController: UITabBarController {
         self.tabBar.backgroundColor = .systemGroupedBackground
         self.tabBar.isTranslucent = false
         setupBarItems()
-        
-        
         
     }
     private func setupBarItems(){

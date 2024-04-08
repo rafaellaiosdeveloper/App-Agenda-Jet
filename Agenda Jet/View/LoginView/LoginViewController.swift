@@ -22,7 +22,17 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Login"
         navigationItem.leftBarButtonItem = backButton
+        setupBackButton()
         self.view.backgroundColor = .white
+    }
+    
+    func setupBackButton(){
+        backButton.target = self
+        backButton.action = #selector(back)
+    }
+    
+    @objc func back(){
+        navigationController?.popViewController(animated: true)
     }
 }
 

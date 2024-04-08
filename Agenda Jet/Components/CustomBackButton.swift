@@ -24,15 +24,6 @@ class CustomBackButton: UIBarButtonItem {
         self.image = backButtonImage
         self.tintColor = .black
         self.style = .plain
-        self.target = self
-        self.action = #selector(backButtonTapped)
-    }
-    
-    @objc private func backButtonTapped() {
-        
-        if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
-                navigationController.popViewController(animated: true)
-            }
     }
 }
 

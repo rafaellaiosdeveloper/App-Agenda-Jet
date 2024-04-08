@@ -9,8 +9,6 @@ import UIKit
 
 class ServicesScreenView: UIView{
     
-    let data = ServicesModel()
-    
     lazy var searchBarServices: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.translatesAutoresizingMaskIntoConstraints = false
@@ -22,8 +20,7 @@ class ServicesScreenView: UIView{
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.isScrollEnabled = true
-        tableView.delegate = self
-        tableView.dataSource = self
+       
         tableView.register(ServicesTableViewCell.self, forCellReuseIdentifier: "cell")
         return tableView
     }()
@@ -63,21 +60,3 @@ class ServicesScreenView: UIView{
             }
 }
 
-extension ServicesScreenView: UITableViewDelegate, UITableViewDataSource{
-  
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data.list.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ServicesTableViewCell
-        let item = data.list[indexPath.row]
-        cell.titleLabel.text = item.title
-        cell.descriptionLabel.text = item.description
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 80
-        }
-}
